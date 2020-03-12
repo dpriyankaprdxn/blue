@@ -333,6 +333,51 @@ p {
 
 /*services styling end*/
 
+/*customer-reviews section styling start*/
+
+.customer-reviews {
+  padding: 117px 0 121px;
+  background: #f2f2f2;
+  text-align: center;
+}
+
+.review-slider { margin-top: 62px; }
+
+.review-slider figure { 
+  margin-bottom: 24px;
+  display: inline-block; 
+}
+
+.review-slider span {
+  margin-bottom: 7px;
+  display: block;
+  color: #7e7e7e;
+  font : 550 13px sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.review-slider figure img { border-radius: 50%; }
+
+.review-slider p { 
+  width: 64%; 
+  margin: 33px auto 25px;
+}
+
+.review-slider .rating-start {  
+  color: #f7c13b;
+  text-indent: -9999px; 
+}
+
+.review-slider .rating-start:before {
+  content: "\f005";
+  float: left;
+  font: 14px fontAwesome;
+  text-indent: 0;
+}
+
+/*customer-reviews section styling end*/
+
 /*=================================
   main styling ends here
 =================================*/
