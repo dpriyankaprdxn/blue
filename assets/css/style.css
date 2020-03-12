@@ -232,13 +232,17 @@ p {
   box-shadow: 2px 2px 10px #ddd;
 }
 
-.services li { 
+.services li ,
+.features ul { 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.services li {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -362,14 +366,16 @@ p {
 .review-slider p { 
   width: 64%; 
   margin: 33px auto 25px;
+  font-size: 18.5px;
 }
 
-.review-slider .rating-start {  
+.rating-star {  
   color: #f7c13b;
+  overflow : hidden;
   text-indent: -9999px; 
 }
 
-.review-slider .rating-start:before {
+.rating-star:before {
   content: "\f005";
   float: left;
   font: 14px fontAwesome;
@@ -384,6 +390,41 @@ p {
   margin: 120px 0;
   text-align: center;
 }
+
+.features ul { margin-top: 70px; }
+
+.features li { 
+  flex-basis: 21%; 
+  padding : 8px 0;
+}
+
+.features ul div {
+  padding: 23px 14%;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  display: inline-block;
+  background: #eeeeef;
+}
+
+.features a { 
+  color: #4186ed;
+  text-indent: -9999px; 
+}
+
+.features a:before {
+  float: left;
+  font : 40px fontAwesome;
+  text-indent: 0;
+}
+
+.mobile:before { content: "\f10a"; }
+
+.love:before { content: "\f004"; }
+
+.star:before { content: "\f005"; }
+
+.api:before { content: "\f013"; }
+
 
 /*features section styling end*/
 
