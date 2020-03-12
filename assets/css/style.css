@@ -378,6 +378,15 @@ p {
 
 /*customer-reviews section styling end*/
 
+/*features section styling start*/
+
+.features {
+  margin: 120px 0;
+  text-align: center;
+}
+
+/*features section styling end*/
+
 /*=================================
   main styling ends here
 =================================*/
