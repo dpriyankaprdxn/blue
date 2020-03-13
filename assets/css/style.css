@@ -220,6 +220,11 @@ h3 {
   text-transform: capitalize;
 }
 
+h4 {
+  font : 16px sans-serif;
+  text-transform : uppercase;
+}
+
 p { 
   color: #928f9e;
   letter-spacing: -1px;
@@ -282,13 +287,15 @@ p {
 }
 
 .banner-text p {
+  color : #fff;
   font-size: 24px;
   line-height: 39px;
 }
 
 .banner-text p a { color: #fff; }
 
-.banner-text p + a { 
+.banner-text p + a ,
+.subscribe-button { 
   padding: 15px;
   border : 1px solid transparent;
   -webkit-border-radius: 25px;
@@ -395,15 +402,18 @@ p {
 
 .features li { 
   flex-basis: 21%; 
-  padding : 8px 0;
+  box-sizing: border-box;
+  padding : 10px 2%;
 }
+
+.features h4 { margin-bottom: 9px; }
 
 .features ul div {
   padding: 23px 14%;
   border-radius: 15px;
   margin-bottom: 40px;
   display: inline-block;
-  background: #eeeeef;
+  background: #EEEEEF;
 }
 
 .features a { 
@@ -427,6 +437,54 @@ p {
 
 
 /*features section styling end*/
+
+/*subscribe section styling start*/
+
+.subscribe {
+  padding : 115px 0;
+  background : #39DEFE;
+  text-align : center;
+}
+
+.subscribe p {
+  width : 58%;
+  margin : 7px auto 78px;
+  color : #2691B4;
+  font-size : 18px;
+  line-height : 30px;
+}
+
+.form-group, .form-control { 
+  width: 32%;
+  display: inline-block; 
+}
+
+.form-group { margin-right: 1%; }
+
+.form-group input {
+  box-sizing: border-box;
+  width: 96%;
+  padding: 17px 3%;
+  border : none;
+  border-radius: 4px;
+  background: #88ecff;
+}
+
+.subscribe .form-group input::placeholder {
+  color: #000;
+  font: 500 16px sans-serif;
+}
+
+.subscribe-button { 
+  box-sizing: border-box;
+  width: 96%;
+  padding: 15px 0; 
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/*subscribe section styling end*/
 
 /*=================================
   main styling ends here
@@ -454,12 +512,14 @@ p {
   nav a:hover,
   .banner-text p a:hover { color: #00008b; }
 
-  .banner-text p + a:hover {
+  .banner-text p + a:hover,
+  .subscribe-button:hover {
     border : 1px solid #4186ed;
     background: #fff;
     color: #4186ed;
   }
 
+  .features li:hover {  box-shadow: 0 0 8px #ddd; }
 }
 
 /*media query for 995px starts here*/
