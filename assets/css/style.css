@@ -427,6 +427,11 @@ p {
   background: #EEEEEF;
 }
 
+.features h3 + p {
+  width: 66%;
+  margin: 0 auto;
+}
+
 .features a { 
   color: #4186ed;
   text-indent: -9999px; 
@@ -588,6 +593,9 @@ footer a { color: #4b9af1; }
     -webkit-box-shadow: 0 0 8px #ddd;
     box-shadow: 0 0 8px #ddd;
   }
+
+  .features a:hover { color: #88ecff; }
+
 }
 
 
@@ -683,7 +691,10 @@ footer a { color: #4b9af1; }
     justify-content: center;
   }
 
+  .features p { margin-bottom: 5px; }
+
   .features li { 
+    border-bottom: 1px solid #ddd;
     -ms-flex-preferred-size: 60%;
     flex-basis: 60%; 
   }
