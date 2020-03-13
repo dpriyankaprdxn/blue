@@ -227,7 +227,6 @@ h4 {
 
 p { 
   color: #928f9e;
-  letter-spacing: -1px;
   line-height: 27px
 }
 
@@ -411,9 +410,9 @@ p {
 .features li { 
   -webkit-box-sizing: border-box;
    box-sizing: border-box;
+   padding : 10px 2%;
   -ms-flex-preferred-size: 21%;
   flex-basis: 21%;
-  padding : 10px 2%;
 }
 
 .features h4 { margin-bottom: 9px; }
@@ -606,7 +605,7 @@ footer a { color: #4b9af1; }
     flex-basis: 60%; 
   }
 
-  .banner .wrapper {  padding: 223px 0 520px; }
+  .banner .wrapper {  padding: 223px 0 450px; }
 
   .banner-text { width: 48%; }
 
@@ -640,6 +639,7 @@ footer a { color: #4b9af1; }
     width: 100%;
     display: none;
     position: absolute; 
+    z-index: 1;
     top: 98%;
     left : 0;
     background: rgba(70,178,221,0.8);
